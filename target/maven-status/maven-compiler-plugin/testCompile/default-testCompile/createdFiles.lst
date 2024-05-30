@@ -1,0 +1,10 @@
+CommonUtility/Java/DatabaseUtilityForSpeedTest.class
+runner/TestRunner.class
+CommonUtility/Java/GetDataFromPropertiesFiles.class
+performanceTests/Examples/PerfTestRunner.class
+uiTests/Examples/TestClass.class
+CommonUtility/Java/SecretsManager.class
+CommonUtility/Java/DatabaseConnection.class
+CommonUtility/Java/FileOperations.class
+apiTests/examples/UsersRunner.class
+apiTests/examples/ExamplesTest.class

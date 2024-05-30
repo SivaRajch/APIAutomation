@@ -1,0 +1,6675 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @sanity</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Test Automation</td>
+      <td>29 May 2024, 12:12</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@sanity</td>
+          <td      class="passed"    >177</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">177</td>
+
+          <td  class="passed"    >17</td>
+          <td >0</td>
+          <td class="total">17</td>
+
+          <td class="duration" data-value="23848279774">23.848</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_115674539.html">apiTests/examples/get/CampaignsExportCSV|API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.956</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute Campaign Exortnd assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:12:13.227 Env is:  qa 
+12:12:13.229 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/Campaign/export/60665/1542'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param sort = &quot;date&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param order = &quot;DESC&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param lang = &quot;en&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.948</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:12:14.189 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;result&quot;: &quot;\&quot;Campaign name\&quot;,\&quot;Visitor name\&quot;,\&quot;Phone Number\&quot;,\&quot;Email Address\&quot;,\&quot;Reason for visit\&quot;,\&quot;Type\&quot;,\&quot;Date\&quot;,\&quot;Campaign Frequency\&quot;,\&quot;Outbound Link\&quot;,\&quot;Recieve Review\&quot;,\&quot;Average Rating\&quot;,\&quot;Overall Satisfaction\&quot;,\&quot;Safety\&quot;,\&quot;Cleanliness\&quot;,\&quot;Friendliness\&quot;,\&quot;Comment\&quot;,\&quot;Source\&quot;,\&quot;Completed on Triggered Action\&quot;,\&quot;Device Name\&quot;,\&quot;Outbound URL\&quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_1349364087.html">apiTests/examples/post/InsertAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">1.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a Campaign and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>12:12:22.457 Env is:  qa 
+12:12:22.457 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/add'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;bad_response_message&quot;:&quot;Thank you for your response. We are sorry your visit was not satisfactory.&quot;,&quot;campaign_categories&quot;:&quot;standard&quot;,&quot;campaign_name&quot;:&quot;Test Char Count For Email Body&quot;,&quot;campaign_type&quot;:&quot;survey&quot;,&quot;categories&quot;:[&quot;Overall Satisfaction&quot;,&quot;Safety&quot;,&quot;Cleanliness&quot;,&quot;Friendliness&quot;],&quot;community_id&quot;:60665,&quot;end_date&quot;:&quot;2023-03-01&quot;,&quot;faces&quot;:&quot;bad&quot;,&quot;good_response_message&quot;:&quot;Thank you for your response. We are glad you enjoyed your visit&quot;,&quot;how_often_survey_display&quot;:&quot;once_every_3_months&quot;,&quot;is_enabled&quot;:true,&quot;publish_campaign&quot;:true,&quot;question_prompt_for_visitor&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2023-03-01&quot;,&quot;status&quot;:&quot;Active&quot;,&quot;survey_type&quot;:&quot;other&quot;,&quot;url&quot;:&quot;https://facebook.com&quot;,&quot;visitor_type&quot;:&quot;staff,group&quot;,&quot;last_visit_prompt&quot;:true,&quot;send_signout_sms&quot;:true,&quot;signout_sms_text&quot;:&quot;Hi! [visitor], Thank you for visiting our [community name] community. Please rate your experience. [link]&quot;,&quot;signout_sms_scheduled&quot;:false,&quot;signout_sms_starttime&quot;:&quot;01:00:00&quot;,&quot;signout_sms_endtime&quot;:&quot;01:00:00&quot;,&quot;survey_sms&quot;:&quot;Hi! [visitor], Thank you visiting our [community name] community.Please rate your experience. [link]&quot;,&quot;survey_sms_scheduled&quot;:false,&quot;survey_sms_starttime&quot;:&quot;01:00:00&quot;,&quot;survey_sms_endtime&quot;:&quot;01:00:00&quot;,&quot;survey_email_subject&quot;:&quot;[community name] Community: [feedback] Feedback&quot;,&quot;survey_email_body&quot;:&quot;Hi [visitor], Thank you for visiting us at [community name] Community.{Please click here to let us know about your experience.} A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computers memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computers memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computers memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computers memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computers memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters.Use our API [community name]&quot;,&quot;on_screen_question&quot;:&quot;We would like to send you some additional information. Can we send you a link via email or text?&quot;}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.996</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>12:12:23.459 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;campaignId&quot;: 1595
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;success&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.campaignId !=null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_4061805138.html">apiTests/examples/post/listAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2200163451.html">@listapi</a>
+       <a href="report-tag_2203492621.html">@sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">1.595</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check Campaign Check List and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/Campaign/listReport'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;start&quot;: 0,&quot;community_id&quot;: 60665,&quot;communityTimeZone&quot;: &quot;America/New_York&quot;}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.574</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3_1495599575.html">apiTests/examples/get/GoogleLinkAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.992</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Campaign Google Link and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>12:12:18.426 Env is:  qa 
+12:12:18.428 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#  * def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/surveyLink/60665'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.985</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>12:12:19.421 [print] {
+  &quot;statusCode&quot;: 404,
+  &quot;result&quot;: &quot;The community address is incomplete&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 404</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.result == &quot;The community address is incomplete&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4_730615887.html">apiTests/examples/post/checkdates API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.953</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute CheckDates API and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>12:12:24.650 Env is:  qa 
+12:12:24.651 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/checkdates'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;community_id&quot;: 60665,&quot;end_date&quot;: &quot;2025-08-17&quot;,&quot;start_date&quot;: &quot;2023-08-16&quot;,&quot;visitor_type&quot;: &quot;vendor&quot;,&quot;timezone&quot;: &quot;Pacific/Honolulu&quot;,&quot;campaign_id&quot;: 0}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.950</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>12:12:25.605 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;count&quot;: 1
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.count == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_5_855338839.html">apiTests/examples/get/CampaignListViewAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">2.057</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute view and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>12:12:06.296 Env is:  qa 
+12:12:06.307 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/listview/60665'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param limit = 25</span>
+
+  <span class="lead-duration duration">0.046</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param offset = 1</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param order = &quot;ASC&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param sort = &quot;link&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param status = &quot;active&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param campaign_ids = &quot;349,318&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.922</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>12:12:08.412 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;result&quot;: {
+    &quot;count&quot;: 3,
+    &quot;campaigns&quot;: [
+      {
+        &quot;id&quot;: 1449,
+        &quot;link&quot;: &quot;None&quot;,
+        &quot;name&quot;: &quot;Staffcampaign&quot;,
+        &quot;alerts&quot;: {
+          &quot;count&quot;: 0,
+          &quot;names&quot;: [
+          ]
+        },
+        &quot;status&quot;: 1,
+        &quot;average&quot;: 0,
+        &quot;end_date&quot;: &quot;05/31/2024&quot;,
+        &quot;visitors&quot;: {
+          &quot;count&quot;: 1,
+          &quot;labels&quot;: [
+            &quot;Staff&quot;
+          ],
+          &quot;values&quot;: &quot;staff&quot;
+        },
+        &quot;start_date&quot;: &quot;12/28/2023&quot;,
+        &quot;total_ratings&quot;: 0
+      },
+      {
+        &quot;id&quot;: 1586,
+        &quot;link&quot;: &quot;None&quot;,
+        &quot;name&quot;: &quot;Siva Campaign&quot;,
+        &quot;alerts&quot;: {
+          &quot;count&quot;: 0,
+          &quot;names&quot;: [
+          ]
+        },
+        &quot;status&quot;: 1,
+        &quot;average&quot;: 0,
+        &quot;end_date&quot;: &quot;05/31/2024&quot;,
+        &quot;visitors&quot;: {
+          &quot;count&quot;: 3,
+          &quot;labels&quot;: [
+            &quot;Volunteer&quot;,
+            &quot;Patients&quot;,
+            &quot;Tour&quot;
+          ],
+          &quot;values&quot;: &quot;group,patient,tour&quot;
+        },
+        &quot;start_date&quot;: &quot;05/29/2024&quot;,
+        &quot;total_ratings&quot;: 0
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.067</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_6_1699480528.html">apiTests/examples/get/searchByIdAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.967</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create an user and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/searchById/436'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.964</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>12:12:22.376 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;data&quot;: {
+    &quot;id&quot;: 436,
+    &quot;community_id&quot;: 2,
+    &quot;campaign_name&quot;: &quot;Test DD&quot;,
+    &quot;visitor_type&quot;: &quot;guest&quot;,
+    &quot;question_prompt_for_visitor&quot;: &quot;Please Rate Your Visit&quot;,
+    &quot;faces&quot;: &quot;excellent&quot;,
+    &quot;good_response_message&quot;: &quot;Hh&quot;,
+    &quot;bad_response_message&quot;: &quot;Hh&quot;,
+    &quot;status&quot;: null,
+    &quot;url&quot;: &quot;https://search.google.com/local/writereview?placeid=ChIJQYyGzsQO9YgR-snE-H0FOpA&quot;,
+    &quot;how_often_survey_display&quot;: &quot;once_per_campaign&quot;,
+    &quot;survey_type&quot;: &quot;google&quot;,
+    &quot;campaign_type&quot;: &quot;review&quot;,
+    &quot;publish_campaign&quot;: true,
+    &quot;is_enabled&quot;: false,
+    &quot;campaign_categories&quot;: null,
+    &quot;last_visit_prompt&quot;: true,
+    &quot;send_signout_sms&quot;: true,
+    &quot;signout_sms_text&quot;: &quot;Hi [visitor]! Thank you for visiting us at [community name] community. Please rate here. [link]&quot;,
+    &quot;signout_sms_scheduled&quot;: false,
+    &quot;signout_sms_starttime&quot;: &quot;01:00:00&quot;,
+    &quot;signout_sms_endtime&quot;: &quot;01:00:00&quot;,
+    &quot;survey_sms&quot;: &quot;Hi [visitor]! Thank you for visiting us at [community name] community. Please take a moment to let us know about your experience: [link]&quot;,
+    &quot;survey_sms_scheduled&quot;: false,
+    &quot;survey_sms_starttime&quot;: &quot;01:00:00&quot;,
+    &quot;survey_sms_endtime&quot;: &quot;01:00:00&quot;,
+    &quot;survey_email_subject&quot;: &quot;[community name] Community: [feedback] Feedback&quot;,
+    &quot;survey_email_body&quot;: &quot;Hi [visitor]! &lt;br&gt;Thank you for visiting us at [community name] Community.{Please click here to let us know about your experience.}&quot;,
+    &quot;on_screen_question&quot;: &quot;&quot;,
+    &quot;start_date&quot;: &quot;2022-05-20&quot;,
+    &quot;end_date&quot;: &quot;2022-05-20&quot;,
+    &quot;sub_heading&quot;: &quot;Give 5 Stars for a Great Experience&quot;,
+    &quot;categories&quot;: [
+      &quot;Overall Satisfaction&quot;
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_7_1283267011.html">apiTests/examples/post/countAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.888</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute Count API and and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>12:12:25.719 Env is:  qa 
+12:12:25.720 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/CampaignResultsPage/exportCampaignReportListCount'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;community_id&quot;:&quot;60862&quot;,&quot;start_date&quot;:&quot;2022-11-04&quot;,&quot;end_date&quot;:&quot;2022-11-05&quot;,&quot;campaign_id&quot;:584,&quot;communityTimeZone&quot;:&quot;America/New_York&quot;}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.883</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>12:12:26.607 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;dataSize&quot;: 0
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Count = ', response.count</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>12:12:26.609 [print] Count =  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.dataSize == 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_8_2717536405.html">apiTests/examples/get/FetchVisitorTypes.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">4.081</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Fetch Visitor Types APi and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>12:12:15.505 Env is:  qa 
+12:12:15.506 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</span>
+
+  <span class="lead-duration duration">1.555</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/apiTests/TestCases/getSigninToken.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://sso-qa-server.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#    * header Authorization = &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dMeFRhcFp3QU81K0pzMkhkZkZ6QWZaTnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2MTg1MTIwLCJleHAiOjE3MTYxOTk1MjB9.gJ5CliDDIXvQOZJpGigjR5t1UN_Bx7T59u-vOebduOY&quot;</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/auth/sign-in'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request '{&quot;email&quot;:&quot;kumar@yopmail.com&quot;,&quot;password&quot;:&quot;77nSSENudi7kd5ug1gQxHV5g+iT4CqW5HOB739Ib4Pk=&quot;,&quot;ip&quot;:null,&quot;remember_me&quot;:false}'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.511</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>12:12:17.067 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;Token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dLS3kwbEtaOFRIdkM3bXBveUNqcFh0Tnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2OTY0OTM2LCJleHAiOjE3MTY5NzkzMzZ9.wisxlN4DeucqyYjsR2toN7gFzKZNtCi3RIdYfHhcwo0&quot;,
+    &quot;CognitoToken&quot;: &quot;eyJraWQiOiJqdGl2R2I0a0FydGtEUDU4TDBWczg5ZEFja1VSc0x4WktYNzNnVGNuOFI4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNGU4NjQxOC04MGIxLTcwNTYtZDA3NS05NzRlOGVlZTdjYTAiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV8zMko5RHlrVE8iLCJjbGllbnRfaWQiOiJwYnRzcTFrYnN2c3FzbGtkY29la2RyZXBvIiwib3JpZ2luX2p0aSI6ImY1MjNmYjNkLTNlZmEtNGMxYS1hOWE0LTdhZWU2ZmY2YTc5MSIsImV2ZW50X2lkIjoiODhjNTc5ZDEtZGM0NS00ZGQ3LWI5OWMtNDE3N2U1MTc0MmU3IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTcxNjk2NDkzNiwiZXhwIjoxNzE2OTc5MzM2LCJpYXQiOjE3MTY5NjQ5MzYsImp0aSI6ImZmOTFmMjk0LTc0MGEtNDFhNy04ZjExLWRmZjFmOTYwZWE1YyIsInVzZXJuYW1lIjoiMTRlODY0MTgtODBiMS03MDU2LWQwNzUtOTc0ZThlZWU3Y2EwIn0.MGqYhST3Mi_WyfU1ZNtGocnSi0xCEJN9lHVJs8AYorpUkY_9JMQYWfDssTiIFKnqeGECw3OCjLvehqe2HaTBpjFYNu8cmpcfGFhZcGmSBkcdZ6LAeSaMgDkqZSTPlUHMR0cARNu5oGkrunNcDexMxAejl-r2euVISLeJ3MxR7_UA0T1FRxg-kWuMhqiXYyDrXEicVLVwk9UfGOXR6a6heyqaewsD9hKLdJiFb3eut0neY26UGTpOuZRsEK4e4ViJngnwIh6i2M2lm-vmioIInzDB-VJk1YAVpbS9vzcDuPD75mCqAiX5IsmSUM-_5DVf69ZlI0iQe6AUa4Z1bt8WPA&quot;,
+    &quot;RefreshToken&quot;: &quot;eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.FI9znbCa_dwrcp7VZp9EHbTZmkZmYGrPUNi0SL_mpax8EwZUiWSDKYKARRpyPUyCH3cllMhoPSIdIoGt5v5xvLaluDpDUrFNk__fhMFflqt-Z7HE4wjSCcofbwX-RtMrtwpYeNYX8vYZhUMuo20M8cT68f73q0Y8d1ixOmCaLAtcv6FJeJw-kYo1hHO9Kini4HDnbplfNU9hkYpv9eF9YIDk9axj1qYtrPL27lA0cNph6aDi4c0iRPkTXdT7xn83CSJfkRWMCcyTo2TurLs2M3mQZoZEcXTm-h8xR-jYsRFYKxdae74TXHaLLqJ_kADJsQffT4NFLrR62X2FlBlwYw.0Z-pRrgCaRAOL1q8.tuZiEXt-fkJNWtlC-sPEo7t2V4yHnV6SkbH06PgWry-_Votu8HNZaEMzBzRU4SZhFF7_g9bRKSjvUGNF61tfH1pDewUuHal4nMNbyce2CxmguWUNCLqoUWNb63_ZRR6a7YMnc9R_KPISxIqXy1v9sinERUUTy9d9DElPGMJ_dydrDfgkyxaWwFKDF_Cbe3f0-fuu9yTQoJKPPKJa1clvFMen_oFjWVFNYwkgfoHuWAXXTWMyON-yw8Jhh-BEEwp7u1MXkmFeXLI1FRmIRoN7iUMvAuy8xiqdbVuIaDbfGJXQ7iLkWqIa8ChZtm-UOikdC2PzDaqQTiMW8SLthgOFTvDuQU0on2Oq0bTDcVufiUG0eLyMQR6NrxZ2wUaxjoaYysYlVyBwUO6g2p1xPYboimE7i4g2Fs9M4z0KNniIcX6tR2V4eSAI9VHwMLnByh0OsNw0nZmU9uaKpYku6pjB4wBMq-n9elGLbz1DHxzb8f8HA2xTdu1S64C-Ci2elGFaWrIA8NAhWAF0uvDUUozSlpq7SlLxCcLrk-KMFh2Jys81CtuX3Lbs4Brif9Yjpse_nGdhRWlkVbuuYv9zkEPq9gJO6-CcAuXkbu-6qIMsCpZKKfBRiXo5IWuBY-CZxEeW_QdCxBD3cwtvE7dwWPzus2XbdfpkOqnPzvYPgfZK2EobGPPnOs2OOIzlVMKpFbmciaLMlHqiULj_luTM74I4cqaom4vLeUniSw9Z-aA6kg9mFxeJ4HyoeA5Iv7S2cXrEpZS_vV_fRLMUlUbHZYVzltBOzXX8U3FXc9wtG1KhP-XNcZpQzPNgXL451DsM4Fx8Nef36STZ17z2XsmkT9Psy25gJH1fKEJUbK08s7KHPH0k2QjVcsKHlHv_20DdaTakgLetx9vldKMAZbxenYOwrjNeqkD_IR3FRv105Yiipm9i9YIJ-vaMeyRLRI4sHBaVc2GGQdOzZIHdVlVzZfRE5ZJh47sQ1MMHJ6PQnBwcOVIPTSaLfLRYqvadiN5JEq3ehq3d7rq0ePcA01zlEph_Y9VNQzUvkZ2i18P7gKq8qLH6KoL639ggm3xREblg0rSQoMBEtNuIm4ebLolJia8wJwnHfFeDt75x6JjbvKkkudDbo1fLWknRsVFQRUROZmMaREZ_IYbYH27WazE6q01yuJ52MlWhXrJgF9gNYc6756oLFMWQnMErVBq2MstPIbaPdvODyultlKJm3GRueVD--GG5bPKGlv__0CEv3c6QxPgDYydiTWVyl1KciqiqS4izJiivxH-77bUBpUXeA9TJPfMfk5vjtb0WhDsFZuUAZsf2d2uUaAycjZFQ.IfxSWLktSEmCEwOpsO5ixw&quot;,
+    &quot;username&quot;: &quot;Kumar&quot;,
+    &quot;userId&quot;: 4607,
+    &quot;user_role&quot;: &quot;CommunityAdmin&quot;,
+    &quot;userEmail&quot;: &quot;kumar@yopmail.com&quot;,
+    &quot;can_edit_ledger&quot;: true,
+    &quot;no_days_to_expire_password&quot;: &quot;18.32&quot;,
+    &quot;user_language&quot;: null
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def token = &quot;Bearer &quot;+response.data.Token</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print 'Token is = ', response.data.Token</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>12:12:17.073 [print] Token is =  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dLS3kwbEtaOFRIdkM3bXBveUNqcFh0Tnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2OTY0OTM2LCJleHAiOjE3MTY5NzkzMzZ9.wisxlN4DeucqyYjsR2toN7gFzKZNtCi3RIdYfHhcwo0 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = inputData.token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/visitorTypes/60665'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param lang = &quot;fr&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.991</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>12:12:18.071 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;datalength&quot;: 7,
+  &quot;data&quot;: [
+    {
+      &quot;label&quot;: &quot;R&eacute;sident&quot;,
+      &quot;value&quot;: &quot;resident&quot;,
+      &quot;label_dashboard&quot;: &quot;R&eacute;sident&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Personnel communautaire&quot;,
+      &quot;value&quot;: &quot;staff&quot;,
+      &quot;label_dashboard&quot;: &quot;Personal&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Prestataire de soins de sant&eacute; ou prestataire de services&quot;,
+      &quot;value&quot;: &quot;vendor&quot;,
+      &quot;label_dashboard&quot;: &quot;Fournisseur de services&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Famille ou invit&eacute;&quot;,
+      &quot;value&quot;: &quot;guest&quot;,
+      &quot;label_dashboard&quot;: &quot;Famille et Amis&quot;
+    },
+    {
+      &quot;label&quot;: &quot;B&eacute;n&eacute;vole&quot;,
+      &quot;value&quot;: &quot;group&quot;,
+      &quot;label_dashboard&quot;: &quot;B&eacute;n&eacute;vole&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Les patients&quot;,
+      &quot;value&quot;: &quot;patient&quot;,
+      &quot;label_dashboard&quot;: &quot;Les patients&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Tourn&eacute;e&quot;,
+      &quot;value&quot;: &quot;tour&quot;,
+      &quot;label_dashboard&quot;: &quot;Visites&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_9_3361518377.html">apiTests/examples/get/UpdateGoogleReviews.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.945</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute Campaign Update Google Reviews and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>12:12:20.370 Env is:  qa 
+12:12:20.372 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/updateGoogleReviews/60665'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.941</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>12:12:21.318 [print] {
+  &quot;statusCode&quot;: 404,
+  &quot;message&quot;: &quot;The end point you are looking for is not found or not available&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 404</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;The end point you are looking for is not found or not available&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_10_2395930436.html">apiTests/examples/post/insightSummaries.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">1.396</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create an user and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention">#  * def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>12:12:28.916 Env is:  qa 
+12:12:28.917 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/insightSummaries'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;communityIds&quot;: [61272]}'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.386</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>12:12:30.312 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;rating&quot;: &quot;0.0&quot;,
+  &quot;message&quot;: &quot;Success&quot;,
+  &quot;ratingsEnabled&quot;: true,
+  &quot;noCampaigns&quot;: false
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Count = ', response.count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>12:12:30.313 [print] Count =  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;Success&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.ratingsEnabled == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_11_1161910566.html">apiTests/examples/get/FetchGoogleReviews.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.960</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Campaign Gogle  fetch and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>12:12:14.364 Env is:  qa 
+12:12:14.364 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/Campaign/fetchReviews/60665'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param page = &quot;1&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.955</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>12:12:15.327 [print] {
+  &quot;statusCode&quot;: 500,
+  &quot;message&quot;: &quot;No Place Id/ Invalid Place id provided&quot;,
+  &quot;result&quot;: {
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 500</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.message == &quot;No Place Id/ Invalid Place id provided&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_12_3357047651.html">apiTests/examples/post/ratingsOverViewAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">1.121</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-50">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute Rating OverView with Different Daterange and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-50" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-51" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>12:12:32.112 Env is:  qa 
+12:12:32.112 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/ratingsOverView'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param lang = &quot;en&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;community_id&quot;: 60665,&quot;timezone&quot;: &quot;America/New_York&quot;}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.118</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>12:12:33.239 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;total_user_ratings&quot;: 38,
+  &quot;total_campaign_average&quot;: 3.3,
+  &quot;graph_view&quot;: [
+    {
+      &quot;month&quot;: &quot;Dec&quot;,
+      &quot;year&quot;: &quot;23&quot;,
+      &quot;total_ratings&quot;: 3.2
+    },
+    {
+      &quot;month&quot;: &quot;Jan&quot;,
+      &quot;year&quot;: &quot;24&quot;,
+      &quot;total_ratings&quot;: 3.2
+    },
+    {
+      &quot;month&quot;: &quot;Feb&quot;,
+      &quot;year&quot;: &quot;24&quot;,
+      &quot;total_ratings&quot;: 3.2
+    },
+    {
+      &quot;month&quot;: &quot;Mar&quot;,
+      &quot;year&quot;: &quot;24&quot;,
+      &quot;total_ratings&quot;: 3.4
+    },
+    {
+      &quot;month&quot;: &quot;Apr&quot;,
+      &quot;year&quot;: &quot;24&quot;,
+      &quot;total_ratings&quot;: 3.3
+    },
+    {
+      &quot;month&quot;: &quot;May&quot;,
+      &quot;year&quot;: &quot;24&quot;,
+      &quot;total_ratings&quot;: 3.3
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_13_1517792008.html">apiTests/examples/post/UpdatesAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">1.017</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-54">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute Updates APi and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">header Content-Type = 'application/json'</div>
+
+  <div id="element-54" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-55">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-55" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention">#  * def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>12:12:23.559 Env is:  qa 
+12:12:23.562 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'Campaign/checkdates'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;bad_response_message&quot;:&quot;Thank you for your response. We are sorry your visit was not satisfactory.&quot;,&quot;campaign_categories&quot;:&quot;standard&quot;,&quot;campaign_name&quot;:&quot;Ratings &quot;,&quot;campaign_type&quot;:&quot;none&quot;,&quot;categories&quot;:[&quot;Overall Satisfaction&quot;,&quot;Safety&quot;,&quot;Cleanliness&quot;,&quot;Friendliness&quot;],&quot;community_id&quot;:60665,&quot;end_date&quot;:&quot;2023-06-30&quot;,&quot;faces&quot;:&quot;&quot;,&quot;good_response_message&quot;:&quot;Thank you for your response. We are glad you enjoyed your visit&quot;,&quot;how_often_survey_display&quot;:&quot;everytime&quot;,&quot;is_enabled&quot;:true,&quot;publish_campaign&quot;:true,&quot;start_date&quot;:&quot;2023-01-01&quot;,&quot;status&quot;:&quot;Active&quot;,&quot;survey_type&quot;:&quot;none&quot;,&quot;url&quot;:&quot;&quot;,&quot;visitor_type&quot;:&quot;staff,guest,group,vendor&quot;,&quot;id&quot;:1375,&quot;last_visit_prompt&quot;:true,&quot;send_signout_sms&quot;:true,&quot;signout_sms_text&quot;:&quot;Hi [visitor]! Thank you for visiting us at [community name] community. Please rate here. [link]&quot;,&quot;signout_sms_scheduled&quot;:false,&quot;signout_sms_starttime&quot;:&quot;01:00:00&quot;,&quot;signout_sms_endtime&quot;:&quot;01:00:00&quot;,&quot;survey_sms&quot;:&quot;&quot;,&quot;survey_sms_scheduled&quot;:false,&quot;survey_sms_starttime&quot;:&quot;&quot;,&quot;survey_sms_endtime&quot;:&quot;&quot;,&quot;survey_email_subject&quot;:&quot;&quot;,&quot;survey_email_body&quot;:&quot;&quot;,&quot;on_screen_question&quot;:&quot;&quot;}'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>12:12:24.585 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;count&quot;: 0
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3070364088.html">apiTests/examples/post/fecthSignoutsAPI.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">0.984</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-58">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Campaign Signouts and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-58" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-59" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention">#    * header Authorization = &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dMeFRhcFp3QU81K0pzMkhkZkZ6QWZaTnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2MTg1MTIwLCJleHAiOjE3MTYxOTk1MjB9.gJ5CliDDIXvQOZJpGigjR5t1UN_Bx7T59u-vOebduOY&quot;</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/Campaign/fetchSignOuts'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;community_id&quot;: 60665,&quot;timezone&quot;: &quot;America/New_York&quot;}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.982</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>12:12:28.846 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;result&quot;: {
+    &quot;manual&quot;: &quot;16&quot;,
+    &quot;auto&quot;: &quot;2&quot;,
+    &quot;total&quot;: &quot;18&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_15_360384368.html">apiTests/examples/get/CampaignsExportCSVASC|API.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">2.870</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Execute Campaign Exort ASC Order and assert fields</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-62">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>12:12:09.946 Env is:  qa 
+12:12:09.951 Running scripts on QA environment 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention">#* def inputData = karate.call('file:./src/test/java/apiTests/TestCases/getSigninToken.feature@signin')</div>
+          <div class="comment indention"># * karate.call('file:./src/test/java/apiTests/TestCases/listAPI.feature@listapi')</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://demo-node.accushield.com'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/Campaign/export/60665/1542'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param sort = &quot;date&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param order = &quot;ASC&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param lang = &quot;en&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">2.859</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>12:12:12.825 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;result&quot;: &quot;\&quot;Campaign name\&quot;,\&quot;Visitor name\&quot;,\&quot;Phone Number\&quot;,\&quot;Email Address\&quot;,\&quot;Reason for visit\&quot;,\&quot;Type\&quot;,\&quot;Date\&quot;,\&quot;Campaign Frequency\&quot;,\&quot;Outbound Link\&quot;,\&quot;Recieve Review\&quot;,\&quot;Average Rating\&quot;,\&quot;Overall Satisfaction\&quot;,\&quot;Safety\&quot;,\&quot;Cleanliness\&quot;,\&quot;Friendliness\&quot;,\&quot;Comment\&quot;,\&quot;Source\&quot;,\&quot;Completed on Triggered Action\&quot;,\&quot;Device Name\&quot;,\&quot;Outbound URL\&quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_16_2016328607.html">apiTests/examples/post/exportCSVAPI1.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2203492621.html">@sanity</a>
+       <a href="report-tag_3249275554.html">@sampleAPIs</a>
+</div>
+
+
+  <span class="lead-duration duration">1.056</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-65">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check Campaign Check Export CSV APi Response with One year Range</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-65" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-66">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-66" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention">#    * header Authorization = &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dMeFRhcFp3QU81K0pzMkhkZkZ6QWZaTnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2MTg1MTIwLCJleHAiOjE3MTYxOTk1MjB9.gJ5CliDDIXvQOZJpGigjR5t1UN_Bx7T59u-vOebduOY&quot;</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'CampaignResultsPage/exportCampaignReportListCSV'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param lang = &quot;fr&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request '{&quot;community_id&quot;:1243,&quot;start_date&quot;:&quot;2022-01-03&quot;,&quot;end_date&quot;:&quot;2023-04-02&quot;,&quot;communityTimeZone&quot;:&quot;America/New_York&quot;}'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.049</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-67">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-67" class="collapse collapsable-details">
+        <pre>12:12:27.752 [print] {
+  &quot;statusCode&quot;: 200,
+  &quot;dataSize&quot;: 37,
+  &quot;data&quot;: &quot;\&quot;Submitted On\&quot;,\&quot;Campaign name\&quot;,\&quot;Visitor\&quot;,\&quot;Phone #\&quot;,\&quot;Visitor Type\&quot;,\&quot;Campaign Frequency\&quot;,\&quot;Campaign Status\&quot;,\&quot;Outbound Link\&quot;,\&quot;Ratings Category Type\&quot;,\&quot;Receive review\&quot;,\&quot;Receive Channel\&quot;,\&quot;Receiver Email\&quot;,\&quot;Receiver Phone\&quot;,\&quot;Completed on Triggered action\&quot;,\&quot;Device Name\&quot;,\&quot;Average Rating\&quot;,\&quot;Rating Category 1\&quot;,\&quot;Rating Category 2\&quot;,\&quot;Rating Category 3\&quot;,\&quot;Rating Category 4\&quot;,\&quot;Amount of Rating categories\&quot;,\&quot;Comments\&quot;,\&quot;Outbound URL\&quot;\n\&quot;07/26/2022 at 02:36 AM\&quot;,\&quot;Google Review Url\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Google\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;durga2@getnada.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Kiosk\&quot;,\&quot;Mahesh Device\&quot;,3,\&quot;3.0\&quot;,0,0,0,1,,\&quot;https://bit.ly/3lC3lFS\&quot;\n\&quot;07/04/2022 at 01:27 PM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 01:12 PM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 01:12 PM\&quot;,\&quot;Service provider \&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 01:11 PM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 01:08 PM\&quot;,\&quot;Service provider \&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 01:07 PM\&quot;,\&quot;Service provider \&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 01:06 PM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 10:38 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 10:18 AM\&quot;,\&quot;Google Review Url\&quot;,\&quot;Rajinikanth Rk\&quot;,\&quot;0002001560\&quot;,\&quot;Staff\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Google\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\&quot;https://bit.ly/3lC3lFS\&quot;\n\&quot;07/04/2022 at 08:30 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 08:05 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 08:03 AM\&quot;,\&quot;Service provider \&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 08:02 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:55 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:55 AM\&quot;,\&quot;Service provider \&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:55 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:54 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:54 AM\&quot;,\&quot;Service provider \&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:54 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:51 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Boo Jon\&quot;,\&quot;0005858585\&quot;,\&quot;Family &amp; Friends\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Email\&quot;,\&quot;osvaldo.sanchez@accushield.com\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:47 AM\&quot;,\&quot;Service provider \&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:46 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot; \&quot;,\&quot;0006004417\&quot;,\&quot;Service Provider\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:35 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:33 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:27 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:23 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:20 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:18 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:15 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:13 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:12 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/04/2022 at 07:08 AM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/01/2022 at 04:24 PM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;07/01/2022 at 04:24 PM\&quot;,\&quot;final check for test alert\&quot;,\&quot;Rahul P\&quot;,\&quot;0007190993\&quot;,\&quot;Staff\&quot;,\&quot;Une fois tous les trois mois\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Both\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Mobile\&quot;,\&quot;Mobile\&quot;,4,\&quot;4.0\&quot;,0,0,0,1,,\n\&quot;05/20/2022 at 01:24 AM\&quot;,\&quot;\&quot;,\&quot;Tim Hourigan\&quot;,\&quot;0008410880\&quot;,\&quot;Service Provider\&quot;,\&quot;\&quot;,\&quot;Inactive\&quot;,\&quot;Autre site internet\&quot;,\&quot;Coutume\&quot;,\&quot;N/A\&quot;,\&quot;Blabla\&quot;,\&quot;N/A\&quot;,\&quot;N/A\&quot;,\&quot;Sign Out - Kiosk\&quot;,\&quot;Jason Tester\&quot;,0,\&quot;0.0\&quot;,0,0,0,1,,\n\&quot;05/18/2022 at 01:23 PM\&quot;,\&quot;Google Review Url\&quot;,\&quot;Meena Qa\&quot;,\&quot;0002888896\&quot;,\&quot;Service Provider\&quot;,\&quot;&Agrave; chaque fois\&quot;,\&quot;Inactive\&quot;,\&quot;Google\&quot;,\&quot;Coutume\&quot;,\&quot;Yes\&quot;,\&quot;Text\&quot;,\&quot;N/A\&quot;,\&quot;404-918-4806\&quot;,\&quot;Sign Out - Kiosk\&quot;,\&quot;Elo Tab G | Ishwarya\&quot;,5,\&quot;5.0\&quot;,0,0,0,1,,\&quot;https://bit.ly/3lC3lFS\&quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.statusCode == 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

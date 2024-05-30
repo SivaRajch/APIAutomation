@@ -1,0 +1,11 @@
+{
+  "MENU_ICON": "#pull_nav_toggle",
+
+  "LOGOUT_XPATH": "//a[contains(.,'Log Out')]",
+  "CAMPAIGNS_TAB_CSS": "#campaigns_main_feature_link a",
+  "BODY_CONTENT_SPINNER_XPATH": "//wf-overlay-spinner//div[contains(@class,'spinner-border')]",
+  "LOADER_SPINNER_XPATH": "//div[contains(@class,'spinner-border')]",
+  "IO_WIDGET_RENDERED_XPATH": "//div[@class='steps-renderer']//div[contains(@class,'step ')]",
+  "CLOSE_DRAWER_XPATH": "//button[contains(@aria-label,'Close creative')]",
+  "POPUP_CONTINUE_BUTTON_XPATH": "//wf-warning-dialog//button[contains(.,'Continue')]"
+}

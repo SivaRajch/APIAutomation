@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"apiTests\/examples\/get\/CampaignListViewAPI[1:5]","start":1716964926195,"end":1716964928481,"title":"apiTests\/examples\/get\/CampaignListViewAPI[1:5] 12:12:06.195-12:12:08.481 Execute view and assert fields"},{"id":2,"group":1,"content":"apiTests\/examples\/get\/CampaignsExportCSVASC|API[1:6]","start":1716964929936,"end":1716964932827,"title":"apiTests\/examples\/get\/CampaignsExportCSVASC|API[1:6] 12:12:09.936-12:12:12.827 Execute Campaign Exort ASC Order and assert fields"},{"id":3,"group":1,"content":"apiTests\/examples\/get\/CampaignsExportCSV|API[1:6]","start":1716964933219,"end":1716964934190,"title":"apiTests\/examples\/get\/CampaignsExportCSV|API[1:6] 12:12:13.219-12:12:14.190 Execute Campaign Exortnd assert fields"},{"id":4,"group":1,"content":"apiTests\/examples\/get\/FetchGoogleReviews[1:6]","start":1716964934362,"end":1716964935328,"title":"apiTests\/examples\/get\/FetchGoogleReviews[1:6] 12:12:14.362-12:12:15.328 Campaign Gogle  fetch and assert fields"},{"id":5,"group":1,"content":"apiTests\/examples\/get\/FetchVisitorTypes[1:6]","start":1716964935501,"end":1716964938076,"title":"apiTests\/examples\/get\/FetchVisitorTypes[1:6] 12:12:15.501-12:12:18.076 Fetch Visitor Types APi and assert fields"},{"id":6,"group":1,"content":"apiTests\/examples\/get\/GoogleLinkAPI[1:6]","start":1716964938425,"end":1716964939423,"title":"apiTests\/examples\/get\/GoogleLinkAPI[1:6] 12:12:18.425-12:12:19.423 Campaign Google Link and assert fields"},{"id":7,"group":1,"content":"apiTests\/examples\/get\/UpdateGoogleReviews[1:6]","start":1716964940369,"end":1716964941321,"title":"apiTests\/examples\/get\/UpdateGoogleReviews[1:6] 12:12:20.369-12:12:21.321 Execute Campaign Update Google Reviews and assert fields"},{"id":8,"group":1,"content":"apiTests\/examples\/get\/searchByIdAPI[1:7]","start":1716964941401,"end":1716964942375,"title":"apiTests\/examples\/get\/searchByIdAPI[1:7] 12:12:21.401-12:12:22.375 Create an user and assert fields"},{"id":9,"group":1,"content":"apiTests\/examples\/post\/InsertAPI[1:5]","start":1716964942456,"end":1716964943461,"title":"apiTests\/examples\/post\/InsertAPI[1:5] 12:12:22.456-12:12:23.461 Create a Campaign and assert fields"},{"id":10,"group":1,"content":"apiTests\/examples\/post\/UpdatesAPI[1:5]","start":1716964943556,"end":1716964944584,"title":"apiTests\/examples\/post\/UpdatesAPI[1:5] 12:12:23.556-12:12:24.584 Execute Updates APi and assert fields"},{"id":11,"group":1,"content":"apiTests\/examples\/post\/checkdates API[1:6]","start":1716964944649,"end":1716964945606,"title":"apiTests\/examples\/post\/checkdates API[1:6] 12:12:24.649-12:12:25.606 Execute CheckDates API and assert fields"},{"id":12,"group":1,"content":"apiTests\/examples\/post\/countAPI[1:6]","start":1716964945716,"end":1716964946609,"title":"apiTests\/examples\/post\/countAPI[1:6] 12:12:25.716-12:12:26.609 Execute Count API and and assert fields"},{"id":13,"group":1,"content":"apiTests\/examples\/post\/exportCSVAPI1[1:7]","start":1716964946692,"end":1716964947753,"title":"apiTests\/examples\/post\/exportCSVAPI1[1:7] 12:12:26.692-12:12:27.753 Check Campaign Check Export CSV APi Response with One year Range"},{"id":14,"group":1,"content":"apiTests\/examples\/post\/fecthSignoutsAPI[1:7]","start":1716964947854,"end":1716964948846,"title":"apiTests\/examples\/post\/fecthSignoutsAPI[1:7] 12:12:27.854-12:12:28.846 Campaign Signouts and assert fields"},{"id":15,"group":1,"content":"apiTests\/examples\/post\/insightSummaries[1:7]","start":1716964948915,"end":1716964950315,"title":"apiTests\/examples\/post\/insightSummaries[1:7] 12:12:28.915-12:12:30.315 Create an user and assert fields"},{"id":16,"group":1,"content":"apiTests\/examples\/post\/listAPI[1:5]","start":1716964950400,"end":1716964951999,"title":"apiTests\/examples\/post\/listAPI[1:5] 12:12:30.400-12:12:31.999 Check Campaign Check List and assert fields"},{"id":17,"group":1,"content":"apiTests\/examples\/post\/ratingsOverViewAPI[1:6]","start":1716964952111,"end":1716964953239,"title":"apiTests\/examples\/post\/ratingsOverViewAPI[1:6] 12:12:32.111-12:12:33.239 Execute Rating OverView with Different Daterange and assert fields"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

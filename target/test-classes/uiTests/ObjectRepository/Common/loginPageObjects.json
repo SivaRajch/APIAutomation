@@ -1,0 +1,5 @@
+{
+  "USERNAME_TEXT_ID" : "#login",
+  "PASSWORD_TEXT_ID" : "#password",
+  "SUBMIT_BUTTON_ID" : "#submit"
+}

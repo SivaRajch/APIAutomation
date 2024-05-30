@@ -1,0 +1,2131 @@
+12:12:02.134 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @sanity
+12:12:02.343 [main] INFO  com.intuit.karate.Runner - karate.env is: 'qa'
+12:12:06.292 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:06.305 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:08.410 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "result": {
+    "count": 3,
+    "campaigns": [
+      {
+        "id": 1449,
+        "link": "None",
+        "name": "Staffcampaign",
+        "alerts": {
+          "count": 0,
+          "names": [
+          ]
+        },
+        "status": 1,
+        "average": 0,
+        "end_date": "05/31/2024",
+        "visitors": {
+          "count": 1,
+          "labels": [
+            "Staff"
+          ],
+          "values": "staff"
+        },
+        "start_date": "12/28/2023",
+        "total_ratings": 0
+      },
+      {
+        "id": 1586,
+        "link": "None",
+        "name": "Siva Campaign",
+        "alerts": {
+          "count": 0,
+          "names": [
+          ]
+        },
+        "status": 1,
+        "average": 0,
+        "end_date": "05/31/2024",
+        "visitors": {
+          "count": 3,
+          "labels": [
+            "Volunteer",
+            "Patients",
+            "Tour"
+          ],
+          "values": "group,patient,tour"
+        },
+        "start_date": "05/29/2024",
+        "total_ratings": 0
+      }
+    ]
+  }
+}
+ 
+12:12:09.904 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 37 (0 remaining) classpath:apiTests/examples/get/CampaignListViewAPI.feature
+12:12:09.945 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:09.949 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:12.824 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "result": "\"Campaign name\",\"Visitor name\",\"Phone Number\",\"Email Address\",\"Reason for visit\",\"Type\",\"Date\",\"Campaign Frequency\",\"Outbound Link\",\"Recieve Review\",\"Average Rating\",\"Overall Satisfaction\",\"Safety\",\"Cleanliness\",\"Friendliness\",\"Comment\",\"Source\",\"Completed on Triggered Action\",\"Device Name\",\"Outbound URL\""
+}
+ 
+12:12:13.202 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 37 (0 remaining) classpath:apiTests/examples/get/CampaignsExportCSVASC|API.feature
+12:12:13.227 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:13.229 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:14.189 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "result": "\"Campaign name\",\"Visitor name\",\"Phone Number\",\"Email Address\",\"Reason for visit\",\"Type\",\"Date\",\"Campaign Frequency\",\"Outbound Link\",\"Recieve Review\",\"Average Rating\",\"Overall Satisfaction\",\"Safety\",\"Cleanliness\",\"Friendliness\",\"Comment\",\"Source\",\"Completed on Triggered Action\",\"Device Name\",\"Outbound URL\""
+}
+ 
+12:12:14.349 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 37 (0 remaining) classpath:apiTests/examples/get/CampaignsExportCSV|API.feature
+12:12:14.363 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:14.364 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:15.326 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 500,
+  "message": "No Place Id/ Invalid Place id provided",
+  "result": {
+  }
+}
+ 
+12:12:15.482 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 37 (0 remaining) classpath:apiTests/examples/get/FetchGoogleReviews.feature
+12:12:15.502 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:15.506 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:15.527 [main] INFO  c.intuit.karate.core.FeatureRuntime - src/test/java/apiTests/TestCases/getSigninToken.feature - call by tag at line 5: signin
+12:12:17.066 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "message": "success",
+  "data": {
+    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dLS3kwbEtaOFRIdkM3bXBveUNqcFh0Tnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2OTY0OTM2LCJleHAiOjE3MTY5NzkzMzZ9.wisxlN4DeucqyYjsR2toN7gFzKZNtCi3RIdYfHhcwo0",
+    "CognitoToken": "eyJraWQiOiJqdGl2R2I0a0FydGtEUDU4TDBWczg5ZEFja1VSc0x4WktYNzNnVGNuOFI4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIxNGU4NjQxOC04MGIxLTcwNTYtZDA3NS05NzRlOGVlZTdjYTAiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV8zMko5RHlrVE8iLCJjbGllbnRfaWQiOiJwYnRzcTFrYnN2c3FzbGtkY29la2RyZXBvIiwib3JpZ2luX2p0aSI6ImY1MjNmYjNkLTNlZmEtNGMxYS1hOWE0LTdhZWU2ZmY2YTc5MSIsImV2ZW50X2lkIjoiODhjNTc5ZDEtZGM0NS00ZGQ3LWI5OWMtNDE3N2U1MTc0MmU3IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTcxNjk2NDkzNiwiZXhwIjoxNzE2OTc5MzM2LCJpYXQiOjE3MTY5NjQ5MzYsImp0aSI6ImZmOTFmMjk0LTc0MGEtNDFhNy04ZjExLWRmZjFmOTYwZWE1YyIsInVzZXJuYW1lIjoiMTRlODY0MTgtODBiMS03MDU2LWQwNzUtOTc0ZThlZWU3Y2EwIn0.MGqYhST3Mi_WyfU1ZNtGocnSi0xCEJN9lHVJs8AYorpUkY_9JMQYWfDssTiIFKnqeGECw3OCjLvehqe2HaTBpjFYNu8cmpcfGFhZcGmSBkcdZ6LAeSaMgDkqZSTPlUHMR0cARNu5oGkrunNcDexMxAejl-r2euVISLeJ3MxR7_UA0T1FRxg-kWuMhqiXYyDrXEicVLVwk9UfGOXR6a6heyqaewsD9hKLdJiFb3eut0neY26UGTpOuZRsEK4e4ViJngnwIh6i2M2lm-vmioIInzDB-VJk1YAVpbS9vzcDuPD75mCqAiX5IsmSUM-_5DVf69ZlI0iQe6AUa4Z1bt8WPA",
+    "RefreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.FI9znbCa_dwrcp7VZp9EHbTZmkZmYGrPUNi0SL_mpax8EwZUiWSDKYKARRpyPUyCH3cllMhoPSIdIoGt5v5xvLaluDpDUrFNk__fhMFflqt-Z7HE4wjSCcofbwX-RtMrtwpYeNYX8vYZhUMuo20M8cT68f73q0Y8d1ixOmCaLAtcv6FJeJw-kYo1hHO9Kini4HDnbplfNU9hkYpv9eF9YIDk9axj1qYtrPL27lA0cNph6aDi4c0iRPkTXdT7xn83CSJfkRWMCcyTo2TurLs2M3mQZoZEcXTm-h8xR-jYsRFYKxdae74TXHaLLqJ_kADJsQffT4NFLrR62X2FlBlwYw.0Z-pRrgCaRAOL1q8.tuZiEXt-fkJNWtlC-sPEo7t2V4yHnV6SkbH06PgWry-_Votu8HNZaEMzBzRU4SZhFF7_g9bRKSjvUGNF61tfH1pDewUuHal4nMNbyce2CxmguWUNCLqoUWNb63_ZRR6a7YMnc9R_KPISxIqXy1v9sinERUUTy9d9DElPGMJ_dydrDfgkyxaWwFKDF_Cbe3f0-fuu9yTQoJKPPKJa1clvFMen_oFjWVFNYwkgfoHuWAXXTWMyON-yw8Jhh-BEEwp7u1MXkmFeXLI1FRmIRoN7iUMvAuy8xiqdbVuIaDbfGJXQ7iLkWqIa8ChZtm-UOikdC2PzDaqQTiMW8SLthgOFTvDuQU0on2Oq0bTDcVufiUG0eLyMQR6NrxZ2wUaxjoaYysYlVyBwUO6g2p1xPYboimE7i4g2Fs9M4z0KNniIcX6tR2V4eSAI9VHwMLnByh0OsNw0nZmU9uaKpYku6pjB4wBMq-n9elGLbz1DHxzb8f8HA2xTdu1S64C-Ci2elGFaWrIA8NAhWAF0uvDUUozSlpq7SlLxCcLrk-KMFh2Jys81CtuX3Lbs4Brif9Yjpse_nGdhRWlkVbuuYv9zkEPq9gJO6-CcAuXkbu-6qIMsCpZKKfBRiXo5IWuBY-CZxEeW_QdCxBD3cwtvE7dwWPzus2XbdfpkOqnPzvYPgfZK2EobGPPnOs2OOIzlVMKpFbmciaLMlHqiULj_luTM74I4cqaom4vLeUniSw9Z-aA6kg9mFxeJ4HyoeA5Iv7S2cXrEpZS_vV_fRLMUlUbHZYVzltBOzXX8U3FXc9wtG1KhP-XNcZpQzPNgXL451DsM4Fx8Nef36STZ17z2XsmkT9Psy25gJH1fKEJUbK08s7KHPH0k2QjVcsKHlHv_20DdaTakgLetx9vldKMAZbxenYOwrjNeqkD_IR3FRv105Yiipm9i9YIJ-vaMeyRLRI4sHBaVc2GGQdOzZIHdVlVzZfRE5ZJh47sQ1MMHJ6PQnBwcOVIPTSaLfLRYqvadiN5JEq3ehq3d7rq0ePcA01zlEph_Y9VNQzUvkZ2i18P7gKq8qLH6KoL639ggm3xREblg0rSQoMBEtNuIm4ebLolJia8wJwnHfFeDt75x6JjbvKkkudDbo1fLWknRsVFQRUROZmMaREZ_IYbYH27WazE6q01yuJ52MlWhXrJgF9gNYc6756oLFMWQnMErVBq2MstPIbaPdvODyultlKJm3GRueVD--GG5bPKGlv__0CEv3c6QxPgDYydiTWVyl1KciqiqS4izJiivxH-77bUBpUXeA9TJPfMfk5vjtb0WhDsFZuUAZsf2d2uUaAycjZFQ.IfxSWLktSEmCEwOpsO5ixw",
+    "username": "Kumar",
+    "userId": 4607,
+    "user_role": "CommunityAdmin",
+    "userEmail": "kumar@yopmail.com",
+    "can_edit_ledger": true,
+    "no_days_to_expire_password": "18.32",
+    "user_language": null
+  }
+}
+ 
+12:12:17.072 [main] INFO  com.intuit.karate - [print] Token is =  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmNyeXB0ZWRQYXlsb2FkIjoiai9PbHRXTDVyeitNN1RmcTNtb05IbWl4VUp4cjhIVmZoWXhXMkd0VWk4L3lNSjU2Q1dQRnRPL21YTFN0Zkc5K3dEMXgyeU1SQk01UnhGTlYyQStJQllQczFxWmZkUE1QUVRvSzVybnJLWitUUFR1WUt0OU9HblR0YWJiUEd0MXU1ZjJTNWsvK1FiUGRZZE5WOXFQSlFSYVIzSmV6SFVZMTZmcVMyb3BzRVBocGc1bEhnbmFmdUxjVjAvVUJXSnZJaHJpLzF2SW1yOG01QzJrK3MzblU5NlZwWUdDZ2NJb3lsaURhTzRrMDdGbTdrbkFqbW5YcFE1SnBmblU1clo1ZGpDVHEycXdCOFUvUXZhR2J1OTU3clljUGMvS3ErRlFXVjR6Y2g2alNoV2t4TGcxcUNVLzU1aWwzaU90eXFnb1kvelFCOUEreDVkaEs4WUVXZVo4N3dLS3kwbEtaOFRIdkM3bXBveUNqcFh0Tnd0Y1VDcFhILzV1bDFjWmgwL1UrYTA4UERxYkRHejJOVGExTVI0QUc2dz09IiwiaWF0IjoxNzE2OTY0OTM2LCJleHAiOjE3MTY5NzkzMzZ9.wisxlN4DeucqyYjsR2toN7gFzKZNtCi3RIdYfHhcwo0 
+12:12:18.069 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "datalength": 7,
+  "data": [
+    {
+      "label": "Résident",
+      "value": "resident",
+      "label_dashboard": "Résident"
+    },
+    {
+      "label": "Personnel communautaire",
+      "value": "staff",
+      "label_dashboard": "Personal"
+    },
+    {
+      "label": "Prestataire de soins de santé ou prestataire de services",
+      "value": "vendor",
+      "label_dashboard": "Fournisseur de services"
+    },
+    {
+      "label": "Famille ou invité",
+      "value": "guest",
+      "label_dashboard": "Famille et Amis"
+    },
+    {
+      "label": "Bénévole",
+      "value": "group",
+      "label_dashboard": "Bénévole"
+    },
+    {
+      "label": "Les patients",
+      "value": "patient",
+      "label_dashboard": "Les patients"
+    },
+    {
+      "label": "Tournée",
+      "value": "tour",
+      "label_dashboard": "Visites"
+    }
+  ]
+}
+ 
+12:12:18.415 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 37 (0 remaining) classpath:apiTests/examples/get/FetchVisitorTypes.feature
+12:12:18.426 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:18.427 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:19.418 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 404,
+  "result": "The community address is incomplete"
+}
+ 
+12:12:19.557 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 8 of 37 (0 remaining) classpath:apiTests/examples/get/GoogleLinkAPI.feature
+12:12:20.370 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:20.371 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:21.318 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 404,
+  "message": "The end point you are looking for is not found or not available"
+}
+ 
+12:12:21.394 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 20 of 37 (0 remaining) classpath:apiTests/examples/get/UpdateGoogleReviews.feature
+12:12:21.403 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:21.404 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:22.374 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "data": {
+    "id": 436,
+    "community_id": 2,
+    "campaign_name": "Test DD",
+    "visitor_type": "guest",
+    "question_prompt_for_visitor": "Please Rate Your Visit",
+    "faces": "excellent",
+    "good_response_message": "Hh",
+    "bad_response_message": "Hh",
+    "status": null,
+    "url": "https://search.google.com/local/writereview?placeid=ChIJQYyGzsQO9YgR-snE-H0FOpA",
+    "how_often_survey_display": "once_per_campaign",
+    "survey_type": "google",
+    "campaign_type": "review",
+    "publish_campaign": true,
+    "is_enabled": false,
+    "campaign_categories": null,
+    "last_visit_prompt": true,
+    "send_signout_sms": true,
+    "signout_sms_text": "Hi [visitor]! Thank you for visiting us at [community name] community. Please rate here. [link]",
+    "signout_sms_scheduled": false,
+    "signout_sms_starttime": "01:00:00",
+    "signout_sms_endtime": "01:00:00",
+    "survey_sms": "Hi [visitor]! Thank you for visiting us at [community name] community. Please take a moment to let us know about your experience: [link]",
+    "survey_sms_scheduled": false,
+    "survey_sms_starttime": "01:00:00",
+    "survey_sms_endtime": "01:00:00",
+    "survey_email_subject": "[community name] Community: [feedback] Feedback",
+    "survey_email_body": "Hi [visitor]! <br>Thank you for visiting us at [community name] Community.{Please click here to let us know about your experience.}",
+    "on_screen_question": "",
+    "start_date": "2022-05-20",
+    "end_date": "2022-05-20",
+    "sub_heading": "Give 5 Stars for a Great Experience",
+    "categories": [
+      "Overall Satisfaction"
+    ]
+  }
+}
+ 
+12:12:22.447 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 21 of 37 (0 remaining) classpath:apiTests/examples/get/searchByIdAPI.feature
+12:12:22.456 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:22.457 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:23.459 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "message": "success",
+  "campaignId": 1595
+}
+ 
+12:12:23.540 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 37 (0 remaining) classpath:apiTests/examples/post/InsertAPI.feature
+12:12:23.558 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:23.561 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:24.584 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "count": 0
+}
+ 
+12:12:24.642 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 23 of 37 (0 remaining) classpath:apiTests/examples/post/UpdatesAPI.feature
+12:12:24.649 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:24.650 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:25.605 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "count": 1
+}
+ 
+12:12:25.668 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 37 (0 remaining) classpath:apiTests/examples/post/checkdates API.feature
+12:12:25.719 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:25.720 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:26.606 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "dataSize": 0
+}
+ 
+12:12:26.609 [main] INFO  com.intuit.karate - [print] Count =  null 
+12:12:26.678 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 37 (0 remaining) classpath:apiTests/examples/post/countAPI.feature
+12:12:26.693 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:26.695 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:27.749 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "dataSize": 37,
+  "data": "\"Submitted On\",\"Campaign name\",\"Visitor\",\"Phone #\",\"Visitor Type\",\"Campaign Frequency\",\"Campaign Status\",\"Outbound Link\",\"Ratings Category Type\",\"Receive review\",\"Receive Channel\",\"Receiver Email\",\"Receiver Phone\",\"Completed on Triggered action\",\"Device Name\",\"Average Rating\",\"Rating Category 1\",\"Rating Category 2\",\"Rating Category 3\",\"Rating Category 4\",\"Amount of Rating categories\",\"Comments\",\"Outbound URL\"\n\"07/26/2022 at 02:36 AM\",\"Google Review Url\",\"Rahul P\",\"0007190993\",\"Staff\",\"À chaque fois\",\"Inactive\",\"Google\",\"Coutume\",\"Yes\",\"Email\",\"durga2@getnada.com\",\"N/A\",\"Sign Out - Kiosk\",\"Mahesh Device\",3,\"3.0\",0,0,0,1,,\"https://bit.ly/3lC3lFS\"\n\"07/04/2022 at 01:27 PM\",\"final check for test alert\",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 01:12 PM\",\"final check for test alert\",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 01:12 PM\",\"Service provider \",\" \",\"0006004417\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 01:11 PM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 01:08 PM\",\"Service provider \",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 01:07 PM\",\"Service provider \",\" \",\"0006004417\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 01:06 PM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 10:38 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 10:18 AM\",\"Google Review Url\",\"Rajinikanth Rk\",\"0002001560\",\"Staff\",\"À chaque fois\",\"Inactive\",\"Google\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\"https://bit.ly/3lC3lFS\"\n\"07/04/2022 at 08:30 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 08:05 AM\",\"final check for test alert\",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 08:03 AM\",\"Service provider \",\" \",\"0006004417\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 08:02 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:55 AM\",\"final check for test alert\",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:55 AM\",\"Service provider \",\" \",\"0006004417\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:55 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:54 AM\",\"final check for test alert\",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:54 AM\",\"Service provider \",\" \",\"0006004417\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:54 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:51 AM\",\"final check for test alert\",\"Boo Jon\",\"0005858585\",\"Family & Friends\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Email\",\"osvaldo.sanchez@accushield.com\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:47 AM\",\"Service provider \",\" \",\"0006004417\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:46 AM\",\"final check for test alert\",\" \",\"0006004417\",\"Service Provider\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:35 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:33 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:27 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:23 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:20 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:18 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:15 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:13 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:12 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/04/2022 at 07:08 AM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/01/2022 at 04:24 PM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"07/01/2022 at 04:24 PM\",\"final check for test alert\",\"Rahul P\",\"0007190993\",\"Staff\",\"Une fois tous les trois mois\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"Yes\",\"Both\",\"N/A\",\"N/A\",\"Sign Out - Mobile\",\"Mobile\",4,\"4.0\",0,0,0,1,,\n\"05/20/2022 at 01:24 AM\",\"\",\"Tim Hourigan\",\"0008410880\",\"Service Provider\",\"\",\"Inactive\",\"Autre site internet\",\"Coutume\",\"N/A\",\"Blabla\",\"N/A\",\"N/A\",\"Sign Out - Kiosk\",\"Jason Tester\",0,\"0.0\",0,0,0,1,,\n\"05/18/2022 at 01:23 PM\",\"Google Review Url\",\"Meena Qa\",\"0002888896\",\"Service Provider\",\"À chaque fois\",\"Inactive\",\"Google\",\"Coutume\",\"Yes\",\"Text\",\"N/A\",\"404-918-4806\",\"Sign Out - Kiosk\",\"Elo Tab G | Ishwarya\",5,\"5.0\",0,0,0,1,,\"https://bit.ly/3lC3lFS\""
+}
+ 
+12:12:27.847 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 29 of 37 (0 remaining) classpath:apiTests/examples/post/exportCSVAPI1.feature
+12:12:27.855 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:27.857 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:28.845 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "result": {
+    "manual": "16",
+    "auto": "2",
+    "total": "18"
+  }
+}
+ 
+12:12:28.908 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 30 of 37 (0 remaining) classpath:apiTests/examples/post/fecthSignoutsAPI.feature
+12:12:28.916 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:28.917 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:30.311 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "rating": "0.0",
+  "message": "Success",
+  "ratingsEnabled": true,
+  "noCampaigns": false
+}
+ 
+12:12:30.313 [main] INFO  com.intuit.karate - [print] Count =  null 
+12:12:30.393 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 31 of 37 (0 remaining) classpath:apiTests/examples/post/insightSummaries.feature
+12:12:30.401 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:30.401 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:31.980 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "datalenth": 43,
+  "data": [
+    {
+      "id": 1586,
+      "campaign_name": "Siva Campaign",
+      "visitor_type": "group,patient,tour",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "05/29/2024",
+      "end_date": "05/31/2024",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Patients,Tour,Volunteer",
+      "visitor_type_label_es": "Excursiones,Pacientes,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Les patients,Visites",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1586,
+          "campaign_category_id": 3424,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1586,
+          "campaign_category_id": 3425,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1586,
+          "campaign_category_id": 3422,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1586,
+          "campaign_category_id": 3423,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": false
+    },
+    {
+      "id": 1449,
+      "campaign_name": "Staffcampaign",
+      "visitor_type": "staff",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "12/28/2023",
+      "end_date": "05/31/2024",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff",
+      "visitor_type_label_es": "Personal",
+      "visitor_type_label_fr": "Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1449,
+          "campaign_category_id": 2884,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1449,
+          "campaign_category_id": 2885,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1449,
+          "campaign_category_id": 2882,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1449,
+          "campaign_category_id": 2883,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": false
+    },
+    {
+      "id": 1344,
+      "campaign_name": "Automation Campaign",
+      "visitor_type": "guest,vendor",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "12/27/2023",
+      "end_date": "05/31/2024",
+      "survey_type": "google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider",
+      "visitor_type_label_es": "Familia y Amigos,Proveedor de servicios",
+      "visitor_type_label_fr": "Famille et Amis,Fournisseur de services",
+      "stats": [
+        {
+          "rating": "4.8",
+          "campaign_id": 1344,
+          "campaign_category_id": 2431,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "4.5",
+          "campaign_id": 1344,
+          "campaign_category_id": 2432,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "4.0",
+          "campaign_id": 1344,
+          "campaign_category_id": 2429,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "3.8",
+          "campaign_id": 1344,
+          "campaign_category_id": 2430,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 4,
+      "denominator": 20,
+      "avg_rating": 4.3,
+      "checkEndDate": false
+    },
+    {
+      "id": 1595,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1595,
+          "campaign_category_id": 3460,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1595,
+          "campaign_category_id": 3461,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1595,
+          "campaign_category_id": 3458,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1595,
+          "campaign_category_id": 3459,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1594,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1594,
+          "campaign_category_id": 3456,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1594,
+          "campaign_category_id": 3457,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1594,
+          "campaign_category_id": 3454,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1594,
+          "campaign_category_id": 3455,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1591,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1591,
+          "campaign_category_id": 3444,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1591,
+          "campaign_category_id": 3445,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1591,
+          "campaign_category_id": 3442,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1591,
+          "campaign_category_id": 3443,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1589,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1589,
+          "campaign_category_id": 3436,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1589,
+          "campaign_category_id": 3437,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1589,
+          "campaign_category_id": 3434,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1589,
+          "campaign_category_id": 3435,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1588,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1588,
+          "campaign_category_id": 3432,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1588,
+          "campaign_category_id": 3433,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1588,
+          "campaign_category_id": 3430,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1588,
+          "campaign_category_id": 3431,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1587,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1587,
+          "campaign_category_id": 3428,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1587,
+          "campaign_category_id": 3429,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1587,
+          "campaign_category_id": 3426,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1587,
+          "campaign_category_id": 3427,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1585,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1585,
+          "campaign_category_id": 3420,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1585,
+          "campaign_category_id": 3421,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1585,
+          "campaign_category_id": 3418,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1585,
+          "campaign_category_id": 3419,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1584,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1584,
+          "campaign_category_id": 3416,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1584,
+          "campaign_category_id": 3417,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1584,
+          "campaign_category_id": 3414,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1584,
+          "campaign_category_id": 3415,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1582,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1582,
+          "campaign_category_id": 3408,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1582,
+          "campaign_category_id": 3409,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1582,
+          "campaign_category_id": 3406,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1582,
+          "campaign_category_id": 3407,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1581,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1581,
+          "campaign_category_id": 3404,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1581,
+          "campaign_category_id": 3405,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1581,
+          "campaign_category_id": 3402,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1581,
+          "campaign_category_id": 3403,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1580,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1580,
+          "campaign_category_id": 3400,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1580,
+          "campaign_category_id": 3401,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1580,
+          "campaign_category_id": 3398,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1580,
+          "campaign_category_id": 3399,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1542,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1542,
+          "campaign_category_id": 3225,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1542,
+          "campaign_category_id": 3226,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1542,
+          "campaign_category_id": 3223,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1542,
+          "campaign_category_id": 3224,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1541,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1541,
+          "campaign_category_id": 3221,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1541,
+          "campaign_category_id": 3222,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1541,
+          "campaign_category_id": 3219,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1541,
+          "campaign_category_id": 3220,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1540,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1540,
+          "campaign_category_id": 3217,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1540,
+          "campaign_category_id": 3218,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1540,
+          "campaign_category_id": 3215,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1540,
+          "campaign_category_id": 3216,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1539,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1539,
+          "campaign_category_id": 3213,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1539,
+          "campaign_category_id": 3214,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1539,
+          "campaign_category_id": 3211,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1539,
+          "campaign_category_id": 3212,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1538,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1538,
+          "campaign_category_id": 3209,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1538,
+          "campaign_category_id": 3210,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1538,
+          "campaign_category_id": 3207,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1538,
+          "campaign_category_id": 3208,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1537,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1537,
+          "campaign_category_id": 3205,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1537,
+          "campaign_category_id": 3206,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1537,
+          "campaign_category_id": 3203,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1537,
+          "campaign_category_id": 3204,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1536,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1536,
+          "campaign_category_id": 3201,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1536,
+          "campaign_category_id": 3202,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1536,
+          "campaign_category_id": 3199,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1536,
+          "campaign_category_id": 3200,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1535,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1535,
+          "campaign_category_id": 3197,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1535,
+          "campaign_category_id": 3198,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1535,
+          "campaign_category_id": 3195,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1535,
+          "campaign_category_id": 3196,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1534,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1534,
+          "campaign_category_id": 3193,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1534,
+          "campaign_category_id": 3194,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1534,
+          "campaign_category_id": 3191,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1534,
+          "campaign_category_id": 3192,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1533,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1533,
+          "campaign_category_id": 3189,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1533,
+          "campaign_category_id": 3190,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1533,
+          "campaign_category_id": 3187,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1533,
+          "campaign_category_id": 3188,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1529,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1529,
+          "campaign_category_id": 3173,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1529,
+          "campaign_category_id": 3174,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1529,
+          "campaign_category_id": 3171,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1529,
+          "campaign_category_id": 3172,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1524,
+      "campaign_name": "Test Char Count For Email Body",
+      "visitor_type": "staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/01/2023",
+      "end_date": "03/01/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Staff,Volunteer",
+      "visitor_type_label_es": "Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1524,
+          "campaign_category_id": 3153,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1524,
+          "campaign_category_id": 3154,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1524,
+          "campaign_category_id": 3151,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1524,
+          "campaign_category_id": 3152,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1443,
+      "campaign_name": "Tour Campaign",
+      "visitor_type": "tour",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/21/2023",
+      "end_date": "03/29/2024",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Tour",
+      "visitor_type_label_es": "Excursiones",
+      "visitor_type_label_fr": "Visites",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1443,
+          "campaign_category_id": 2856,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1443,
+          "campaign_category_id": 2857,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1443,
+          "campaign_category_id": 2854,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1443,
+          "campaign_category_id": 2855,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1340,
+      "campaign_name": "Test",
+      "visitor_type": "vendor,guest,staff,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/27/2023",
+      "end_date": "03/27/2023",
+      "survey_type": "google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider,Staff,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Proveedor de servicios,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis,Fournisseur de services,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1340,
+          "campaign_category_id": 2415,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1340,
+          "campaign_category_id": 2416,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1340,
+          "campaign_category_id": 2413,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1340,
+          "campaign_category_id": 2414,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1321,
+      "campaign_name": "Campiagn Name Ffffff",
+      "visitor_type": "vendor,guest",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "03/07/2023",
+      "end_date": "03/07/2023",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider",
+      "visitor_type_label_es": "Familia y Amigos,Proveedor de servicios",
+      "visitor_type_label_fr": "Famille et Amis,Fournisseur de services",
+      "stats": [
+        {
+          "rating": "3.5",
+          "campaign_id": 1321,
+          "campaign_category_id": 2314,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "3.5",
+          "campaign_id": 1321,
+          "campaign_category_id": 2315,
+          "categories": "Test"
+        },
+        {
+          "rating": "3.5",
+          "campaign_id": 1321,
+          "campaign_category_id": 2316,
+          "categories": "Test New"
+        }
+      ],
+      "total_count": 2,
+      "denominator": 15,
+      "avg_rating": 3.5,
+      "checkEndDate": true
+    },
+    {
+      "id": 1281,
+      "campaign_name": "Automation Test Campagin",
+      "visitor_type": "staff,guest,vendor",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "09/29/2023",
+      "end_date": "11/30/2023",
+      "survey_type": "google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider,Staff",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Proveedor de servicios",
+      "visitor_type_label_fr": "Famille et Amis,Fournisseur de services,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 1281,
+          "campaign_category_id": 2153,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1281,
+          "campaign_category_id": 2154,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1281,
+          "campaign_category_id": 2151,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 1281,
+          "campaign_category_id": 2152,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 1272,
+      "campaign_name": "New  Test Campaign",
+      "visitor_type": "staff,guest,vendor",
+      "community_id": 60665,
+      "is_enabled": true,
+      "start_date": "11/21/2022",
+      "end_date": "11/23/2022",
+      "survey_type": "google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider,Staff",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Proveedor de servicios",
+      "visitor_type_label_fr": "Famille et Amis,Fournisseur de services,Personal",
+      "stats": [
+        {
+          "rating": "3.7",
+          "campaign_id": 1272,
+          "campaign_category_id": 2114,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "3.2",
+          "campaign_id": 1272,
+          "campaign_category_id": 2116,
+          "categories": "Please Provide Valid Categori3"
+        },
+        {
+          "rating": "3.7",
+          "campaign_id": 1272,
+          "campaign_category_id": 2115,
+          "categories": "Please Provide Valid Categorie"
+        }
+      ],
+      "total_count": 13,
+      "denominator": 15,
+      "avg_rating": 3.5,
+      "checkEndDate": true
+    },
+    {
+      "id": 618,
+      "campaign_name": "Test New Inn",
+      "visitor_type": "vendor,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/26/2022",
+      "end_date": "11/28/2022",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Healthcare Provider,Volunteer",
+      "visitor_type_label_es": "Proveedor de servicios,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Fournisseur de services",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 618,
+          "campaign_category_id": 714,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 618,
+          "campaign_category_id": 715,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 618,
+          "campaign_category_id": 712,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 618,
+          "campaign_category_id": 713,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 616,
+      "campaign_name": "Amar Test",
+      "visitor_type": "group,guest",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/24/2022",
+      "end_date": "11/24/2022",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 616,
+          "campaign_category_id": 692,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 616,
+          "campaign_category_id": 693,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 616,
+          "campaign_category_id": 690,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 616,
+          "campaign_category_id": 691,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 604,
+      "campaign_name": "Bhargavi Test",
+      "visitor_type": "guest,staff",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/23/2022",
+      "end_date": "11/23/2022",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Staff",
+      "visitor_type_label_es": "Familia y Amigos,Personal",
+      "visitor_type_label_fr": "Famille et Amis,Personal",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 604,
+          "campaign_category_id": 698,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 604,
+          "campaign_category_id": 699,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 604,
+          "campaign_category_id": 696,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "0.0",
+          "campaign_id": 604,
+          "campaign_category_id": 697,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 20,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 603,
+      "campaign_name": "Priya Campaign",
+      "visitor_type": "guest,staff",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/07/2022",
+      "end_date": "11/09/2022",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Staff",
+      "visitor_type_label_es": "Familia y Amigos,Personal",
+      "visitor_type_label_fr": "Famille et Amis,Personal",
+      "stats": [
+        {
+          "rating": "3.0",
+          "campaign_id": 603,
+          "campaign_category_id": 662,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "3.5",
+          "campaign_id": 603,
+          "campaign_category_id": 663,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "3.5",
+          "campaign_id": 603,
+          "campaign_category_id": 660,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "3.5",
+          "campaign_id": 603,
+          "campaign_category_id": 661,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 2,
+      "denominator": 20,
+      "avg_rating": 3.4,
+      "checkEndDate": true
+    },
+    {
+      "id": 602,
+      "campaign_name": "Check Campaign",
+      "visitor_type": "vendor,group",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/07/2022",
+      "end_date": "11/07/2022",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Healthcare Provider,Volunteer",
+      "visitor_type_label_es": "Proveedor de servicios,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Fournisseur de services",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 602,
+          "campaign_category_id": 659,
+          "categories": "Overall Satisfaction"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 5,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 600,
+      "campaign_name": "Testsiva",
+      "visitor_type": "staff,guest,group,vendor",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/07/2022",
+      "end_date": "11/07/2022",
+      "survey_type": "other",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider,Staff,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Proveedor de servicios,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis,Fournisseur de services,Personal",
+      "stats": [
+        {
+          "rating": "2.5",
+          "campaign_id": 600,
+          "campaign_category_id": 656,
+          "categories": "Cleanliness"
+        },
+        {
+          "rating": "3.0",
+          "campaign_id": 600,
+          "campaign_category_id": 657,
+          "categories": "Friendliness"
+        },
+        {
+          "rating": "3.0",
+          "campaign_id": 600,
+          "campaign_category_id": 654,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "3.5",
+          "campaign_id": 600,
+          "campaign_category_id": 655,
+          "categories": "Safety"
+        }
+      ],
+      "total_count": 2,
+      "denominator": 20,
+      "avg_rating": 3,
+      "checkEndDate": true
+    },
+    {
+      "id": 585,
+      "campaign_name": "Test Siva New",
+      "visitor_type": "guest,staff,vendor",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "11/04/2022",
+      "end_date": "11/09/2022",
+      "survey_type": "none",
+      "campaign_type": "none",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Healthcare Provider,Staff",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Proveedor de servicios",
+      "visitor_type_label_fr": "Famille et Amis,Fournisseur de services,Personal",
+      "stats": [
+        {
+          "rating": "3.7",
+          "campaign_id": 585,
+          "campaign_category_id": 625,
+          "categories": "Overall Satisfaction"
+        },
+        {
+          "rating": "2.3",
+          "campaign_id": 585,
+          "campaign_category_id": 626,
+          "categories": "Verygood"
+        }
+      ],
+      "total_count": 3,
+      "denominator": 10,
+      "avg_rating": 3,
+      "checkEndDate": true
+    },
+    {
+      "id": 128,
+      "campaign_name": "Google Review Push Sep 2021",
+      "visitor_type": "guest",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "09/30/2021",
+      "end_date": "10/10/2021",
+      "survey_type": "Google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest",
+      "visitor_type_label_es": "Familia y Amigos",
+      "visitor_type_label_fr": "Famille et Amis",
+      "stats": [
+        {
+          "rating": "2.2",
+          "campaign_id": 128,
+          "campaign_category_id": 33,
+          "categories": "Overall Satisfaction"
+        }
+      ],
+      "total_count": 5,
+      "denominator": 5,
+      "avg_rating": 2.2,
+      "checkEndDate": true
+    },
+    {
+      "id": 14,
+      "campaign_name": "pol review",
+      "visitor_type": "guest,group,resident,staff",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "07/30/2021",
+      "end_date": "08/03/2021",
+      "survey_type": "Google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Resident,Staff,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Residente,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis,Personal,Résident",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 14,
+          "campaign_category_id": 9,
+          "categories": "Overall Satisfaction"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 5,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 13,
+      "campaign_name": "moviecampaignwithSurvey",
+      "visitor_type": "guest,group,resident,staff",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "07/22/2021",
+      "end_date": "07/28/2021",
+      "survey_type": "Online Survey",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Resident,Staff,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Residente,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis,Personal,Résident",
+      "stats": [
+        {
+          "rating": "0.0",
+          "campaign_id": 13,
+          "campaign_category_id": 6,
+          "categories": "Overall Satisfaction"
+        }
+      ],
+      "total_count": 0,
+      "denominator": 5,
+      "avg_rating": 0,
+      "checkEndDate": true
+    },
+    {
+      "id": 11,
+      "campaign_name": "Campagin with Surveys",
+      "visitor_type": "guest,group,resident,staff",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "07/01/2021",
+      "end_date": "07/06/2021",
+      "survey_type": "Online Survey",
+      "campaign_type": "survey",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Resident,Staff,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Residente,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis,Personal,Résident",
+      "stats": [
+        {
+          "rating": "4.0",
+          "campaign_id": 11,
+          "campaign_category_id": 1,
+          "categories": "Overall Satisfaction"
+        }
+      ],
+      "total_count": 1,
+      "denominator": 5,
+      "avg_rating": 4,
+      "checkEndDate": true
+    },
+    {
+      "id": 10,
+      "campaign_name": "First test camapign",
+      "visitor_type": "guest,group,staff",
+      "community_id": 60665,
+      "is_enabled": false,
+      "start_date": "07/01/2021",
+      "end_date": "07/02/2021",
+      "survey_type": "Google",
+      "campaign_type": "review",
+      "publish_campaign": true,
+      "visitor_type_label": "Family or Guest,Staff,Volunteer",
+      "visitor_type_label_es": "Familia y Amigos,Personal,Voluntario",
+      "visitor_type_label_fr": "Bénévole,Famille et Amis,Personal",
+      "stats": [
+        {
+          "rating": "2.8",
+          "campaign_id": 10,
+          "campaign_category_id": 3,
+          "categories": "Overall Satisfaction"
+        }
+      ],
+      "total_count": 6,
+      "denominator": 5,
+      "avg_rating": 2.8,
+      "checkEndDate": true
+    }
+  ]
+}
+ 
+12:12:32.086 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 32 of 37 (0 remaining) classpath:apiTests/examples/post/listAPI.feature
+12:12:32.111 [main] INFO  com.intuit.karate - Env is:  qa 
+12:12:32.112 [main] INFO  com.intuit.karate - Running scripts on QA environment 
+12:12:33.238 [main] INFO  com.intuit.karate - [print] {
+  "statusCode": 200,
+  "total_user_ratings": 38,
+  "total_campaign_average": 3.3,
+  "graph_view": [
+    {
+      "month": "Dec",
+      "year": "23",
+      "total_ratings": 3.2
+    },
+    {
+      "month": "Jan",
+      "year": "24",
+      "total_ratings": 3.2
+    },
+    {
+      "month": "Feb",
+      "year": "24",
+      "total_ratings": 3.2
+    },
+    {
+      "month": "Mar",
+      "year": "24",
+      "total_ratings": 3.4
+    },
+    {
+      "month": "Apr",
+      "year": "24",
+      "total_ratings": 3.3
+    },
+    {
+      "month": "May",
+      "year": "24",
+      "total_ratings": 3.3
+    }
+  ]
+}
+ 
+12:12:33.309 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 35 of 37 (0 remaining) classpath:apiTests/examples/post/ratingsOverViewAPI.feature
